@@ -6,12 +6,9 @@ class Solution {
 
        int count=0;
        for(int num:nums){
-        int currentCount=0;
-        while(num>0){
-            currentCount++;
-            num=num/10;
-        }
-        if(currentCount%2==0){
+        String str=String.valueOf(num);
+        int len=str.length();
+        if(len%2==0){
             count++;
         }
        }
