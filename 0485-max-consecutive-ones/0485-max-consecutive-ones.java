@@ -6,16 +6,9 @@ class Solution {
             if(nums[i]==1){
                 count++;
             }else{
-                if(count>max){
-                    max=count;
-                }
                 count=0;
             }
-            if(i==nums.length-1){
-               if(count>max){
-                    max=count;
-                } 
-            }
+            max=Math.max(max,count);
         }
         
         
