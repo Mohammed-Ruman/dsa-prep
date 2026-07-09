@@ -4,12 +4,12 @@ class Solution {
         int fp=0;
         while(sp<nums.length && fp<nums.length){
             
-            if(nums[sp]>=nums[fp]){
+            if(nums[sp]==nums[fp]){
                 fp++;
             }else {
                 sp++;
                 nums[sp]=nums[fp];
-                fp=sp;
+    
             }
 
         }
